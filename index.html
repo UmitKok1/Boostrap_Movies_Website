@@ -54,8 +54,8 @@
       justify-content: center;
     }
 
-    .carousel-inner {
-      padding: 0.5em 5em;
+    .banner .carousel-inner {
+      padding: 0.5em 0em;
     }
 
     .popularSection {
@@ -332,7 +332,6 @@
     </div>
   </div>
 
-
   <div class="inVisionCarouselSection">
 
     <div class="inVisionHeaderDiv">
@@ -517,16 +516,10 @@
       imgElement3.src = isMobile ? '/Images/Mobil_HP_GobletOfFire.png' : '/Images/HP_GobletOfFire.png';
     }
 
-    // Resize event listener
     window.addEventListener('resize', updateCarouselImages);
 
-    // İlk yükleme için çağırma
     updateCarouselImages();
 
-    // var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleControls'), {
-    //   interval: 5000, // To prevent automatic sliding
-    //   wrap: true // Ensures the carousel loops back to the start
-    // });
   </script>
 </body>
 
