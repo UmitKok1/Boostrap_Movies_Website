@@ -7,6 +7,7 @@
   <title>Movies Page</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <style>
+    /* Navbar */
     .nav-link {
       color: white !important;
     }
@@ -22,7 +23,9 @@
     .navbar-toggler-icon {
       background-color: #ff6347;
     }
+    /* Navbar */
 
+    /* Carousel */
     .carousel-item img {
       height: 800px;
       object-fit: cover;
@@ -30,15 +33,15 @@
 
     .carousel-item p {
       color: yellow;
-      font-weight: 700;
+      font-weight: 600;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
     }
+    /* Carousel */
 
+    /* Popular */
     .card-body {
       height: 200px;
-      /* Sabit yükseklik */
       overflow: hidden;
-      /* Aşan metni gizler */
     }
 
     .card-body p {
@@ -53,16 +56,16 @@
       display: flex;
       justify-content: center;
     }
+    /* Popular */
 
+    /* Coming Soon */
     .banner .carousel-inner {
-      padding: 0.5em 0em;
+      padding-bottom:0.5em;
     }
-    .popularSectionTitle{
+
+    .popularSectionTitle {
       padding-left: 2em;
     }
-    /* .popularSection {
-      padding-left: 2em;
-    } */
 
     .inVisionHeaderDiv {
       padding-left: 2em;
@@ -80,15 +83,22 @@
     .isVisionCard .card-body {
       padding: 4px 12px;
     }
-
+    .isVisionCard .card-title{
+      font-size: 1rem;
+    }
+    .isVisionCard .card-text{
+      font-size: 0.75rem;
+      color: grey;
+      text-shadow: none;
+    }
     .isVisionCard img {
       max-width: 100%;
-      max-height: 60%;
+      max-height: 70%;
     }
 
     .card-body .btn {
-      margin-left: 12px;
-      margin-top: 12px;
+      margin-left: 2px;
+      margin-top: 2px;
     }
 
     .carousel-control-prev,
@@ -104,16 +114,13 @@
     .inVisionCarouselSection .inVisionCarouselSection .carousel-control-next {
       margin: 0 30px;
     }
+    /* Coming Soon */
 
-    @media (max-width: 768px) {
+    /* Tablet */
+    @media (max-width: 1024px) {
       .carousel-item img {
         height: 50vh;
       }
-
-      .banner .carousel-inner {
-        padding: 0.5em 1em;
-      }
-
       .carousel-caption h5 {
         font-size: 2rem;
       }
@@ -122,7 +129,9 @@
         font-size: 1rem;
       }
     }
+    /* Tablet */
 
+    /* Mobile */
     @media (max-width: 576px) {
 
       .banner .carousel-control-prev,
@@ -133,25 +142,18 @@
 
       .banner .carousel-item img {
         height: 350px;
-        /* Daha küçük ekranlar için daha küçük yükseklik */
-      }
-
-      .banner .carousel-inner {
-        padding: 0.5em 1em;
       }
 
       .cards-wrapper {
         flex-direction: column;
-        /* Mobilde tüm kartlar alt alta */
         align-items: center;
       }
 
       .isVisionCard {
         width: 100%;
-        /* Mobilde kartlar tüm genişliği kaplayacak */
       }
-
     }
+    /* Mobile */
   </style>
 </head>
 
@@ -244,7 +246,8 @@
       <div class="row g-8">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="/Images/ss_3.jpeg" class="card-img-top" alt="Film 1" style="height: 400px; object-fit: cover;">
+            <img src="/Images/HP_ChamberOfSecrets_P.jpeg" class="card-img-top" alt="Film 1"
+              style="height: 400px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title">Harry Potter and The Chamber of Secrets</h5>
               <p class="card-text">Harry returns to Hogwarts for his second year, only to face mysterious attacks that
@@ -259,30 +262,34 @@
 
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="/Images/ss_3.jpeg" class="card-img-top" alt="Film 1" style="height: 400px; object-fit: cover;">
+            <img src="/Images/HP_GobletOfTheFire_P.jpg" class="card-img-top" alt="Film 1"
+              style="height: 400px; object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Harry Potter and The Chamber of Secrets</h5>
-              <p class="card-text">Harry returns to Hogwarts for his second year, only to face mysterious attacks that
-                leave students petrified. Legends of a hidden Chamber of Secrets resurface, and Harry uncovers its
-                connection to a dangerous monster. With the help of Ron and Hermione, he discovers the truth, defeats
-                the
-                monstrous Basilisk, and saves Ginny Weasley, who had been controlled by a cursed diary.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+              <h5 class="card-title">Harry Potter and The Goblet of the Fire</h5>
+              <p class="card-text">In his fourth year at Hogwarts, Harry Potter unexpectedly becomes a participant in
+                the dangerous Triwizard Tournament. Faced with fire-breathing dragons, underwater rescues, and a deadly
+                enchanted maze, Harry must use all his skills to survive. As the tournament unfolds, Harry discovers a
+                dark conspiracy and comes face-to-face with the terrifying return of Lord Voldemort. With thrilling
+                challenges and unforgettable twists, this chapter of the wizarding world takes a darker and more intense
+                turn.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 12 hours ago</small></p>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="/Images/ss_3.jpeg" class="card-img-top" alt="Film 1" style="height: 400px; object-fit: cover;">
+            <img src="/Images/HP_PhilosophersStone_P.jpg" class="card-img-top" alt="Film 1"
+              style="height: 400px; object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Harry Potter and The Chamber of Secrets</h5>
-              <p class="card-text">Harry returns to Hogwarts for his second year, only to face mysterious attacks that
-                leave students petrified. Legends of a hidden Chamber of Secrets resurface, and Harry uncovers its
-                connection to a dangerous monster. With the help of Ron and Hermione, he discovers the truth, defeats
-                the
-                monstrous Basilisk, and saves Ginny Weasley, who had been controlled by a cursed diary.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+              <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+              <p class="card-text">Harry Potter, an ordinary boy living with his neglectful relatives, discovers on his
+                11th birthday that he is a wizard. Invited to attend Hogwarts School of Witchcraft and Wizardry, Harry
+                embarks on a magical journey, forming lifelong friendships and uncovering his unique destiny. Along the
+                way, he unravels the mystery of the Philosopher's Stone, a powerful artifact sought by dark forces. In
+                this enchanting introduction to the wizarding world, Harry faces trials that test his courage, loyalty,
+                and heart.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 20 mins ago</small></p>
             </div>
           </div>
         </div>
@@ -291,14 +298,16 @@
 
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="/Images/ss_3.jpeg" class="card-img-top" alt="Film 1" style="height: 400px; object-fit: cover;">
+            <img src="/Images/HP_PrisonersOfAzkaban_P.png" class="card-img-top" alt="Film 1"
+              style="height: 400px; object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Harry Potter and The Chamber of Secrets</h5>
-              <p class="card-text">Harry returns to Hogwarts for his second year, only to face mysterious attacks that
-                leave students petrified. Legends of a hidden Chamber of Secrets resurface, and Harry uncovers its
-                connection to a dangerous monster. With the help of Ron and Hermione, he discovers the truth, defeats
-                the
-                monstrous Basilisk, and saves Ginny Weasley, who had been controlled by a cursed diary.</p>
+              <h5 class="card-title">Harry Potter and Prisoner of Azkaban</h5>
+              <p class="card-text">In his third year at Hogwarts School of Witchcraft and Wizardry, Harry learns that
+                Sirius Black, an escaped prisoner from Azkaban, is believed to be hunting him. As dark secrets about
+                Sirius and Harry's past emerge, Harry discovers the truth is far more complicated than it seems. With
+                the help of his friends, Hermione's cleverness, and the mysterious Professor Lupin, Harry must confront
+                fears, face the chilling Dementors, and uncover the real story behind the Prisoner of Azkaban. This
+                thrilling installment explores trust, betrayal, and the enduring power of friendship.</p>
               <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
             </div>
           </div>
@@ -306,30 +315,43 @@
 
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="/Images/ss_3.jpeg" class="card-img-top" alt="Film 1" style="height: 400px; object-fit: cover;">
+            <img src="/Images/HP_ OrderoOfthePhoenix_P.jpg" class="card-img-top" alt="Film 1"
+              style="height: 400px; object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Harry Potter and The Chamber of Secrets</h5>
-              <p class="card-text">Harry returns to Hogwarts for his second year, only to face mysterious attacks that
-                leave students petrified. Legends of a hidden Chamber of Secrets resurface, and Harry uncovers its
-                connection to a dangerous monster. With the help of Ron and Hermione, he discovers the truth, defeats
-                the
-                monstrous Basilisk, and saves Ginny Weasley, who had been controlled by a cursed diary.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+              <h5 class="card-title">Harry Potter and the Order of the Phoenix</h5>
+              <p class="card-text">As Harry enters his fifth year at Hogwarts School of Witchcraft and Wizardry, he
+                struggles with the return of Lord Voldemort and the skepticism of the wizarding community. The Ministry
+                of Magic, in denial about Voldemort's resurrection, installs the oppressive Dolores Umbridge as the new
+                Defense Against the Dark Arts teacher, turning Hogwarts into a battleground for control and resistance.
+                Meanwhile, Harry discovers the secretive Order of the Phoenix, a group dedicated to fighting Voldemort.
+                With his friends, Harry forms Dumbledore's Army, training students in practical defense spells. As
+                tensions rise, Harry faces haunting visions of Voldemort's plans, leading to a climactic battle at the
+                Ministry of Magic. This installment is a tale of resilience, unity, and the fight for truth against
+                tyranny.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 hours ago</small></p>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="/Images/ss_3.jpeg" class="card-img-top" alt="Film 1" style="height: 400px; object-fit: cover;">
+            <img src="/Images/HP_HalfBloodPrince_P.jpg" class="card-img-top" alt="Film 1"
+              style="height: 400px; object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Harry Potter and The Chamber of Secrets</h5>
-              <p class="card-text">Harry returns to Hogwarts for his second year, only to face mysterious attacks that
-                leave students petrified. Legends of a hidden Chamber of Secrets resurface, and Harry uncovers its
-                connection to a dangerous monster. With the help of Ron and Hermione, he discovers the truth, defeats
-                the
-                monstrous Basilisk, and saves Ginny Weasley, who had been controlled by a cursed diary.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+              <h5 class="card-title">Harry Potter and the Half-Blood Prince</h5>
+              <p class="card-text">In his sixth year at Hogwarts, Harry delves deeper into the mysteries of Lord
+                Voldemort's past under the guidance of Professor Dumbledore. Together, they explore Voldemort's rise to
+                power and uncover the dark magic of Horcruxes, objects containing pieces of Voldemort's soul that must
+                be destroyed to defeat him.
+
+                Harry also discovers an old potion book belonging to the mysterious "Half-Blood Prince," filled with
+                advanced spells and secrets. As danger looms, Hogwarts becomes a battleground of loyalty and betrayal.
+                The story culminates in a shocking twist that changes everything, leaving Harry more determined than
+                ever to complete the mission entrusted to him.
+
+                This chapter weaves themes of love, loss, and sacrifice as Harry prepares for the ultimate battle
+                against darkness.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 14 hours ago</small></p>
             </div>
           </div>
         </div>
@@ -351,47 +373,42 @@
         <div class="carousel-item active">
           <div class="cards-wrapper">
             <div class="isVisionCard">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_3.jpeg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss.png" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -400,96 +417,42 @@
         <div class="carousel-item">
           <div class="cards-wrapper">
             <div class="isVisionCard">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
+              <img src="/Images/HP_DeathlyHallows.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="isVisionCard">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="isVisionCard d-none d-md-block">
-              <img src="/Images/ss_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <h5 class="card-title">Harry Potter Deathly Hallows Part 1</h5>
+                <p class="card-text">In Harry Potter and the Deathly Hallows: Part 1, Harry, Ron, and Hermione set out to destroy Voldemort's Horcruxes, facing constant danger and the strain of their friendship. As Voldemort's power grows, they uncover the legend of the Deathly Hallows, which could alter the war's outcome, and prepare for the final battle against the Dark Lord.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
